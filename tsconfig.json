@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-sdk-flexpaie": ["./src/index"]
+      "react-native-sdk-flexpaie-sms": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

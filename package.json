@@ -1,5 +1,5 @@
 {
-  "name": "react-native-sdk-flexpaie",
+  "name": "react-native-sdk-flexpaie-sms",
   "version": "0.1.0",
   "description": "test send sms package",
   "main": "./lib/module/index.js",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremie-codes/react-native-sdk-flexpaie.git"
+    "url": "git+https://github.com/jeremie-codes/react-native-sdk-flexpaie-sms.git"
   },
   "author": "jeremie-codes <jrmmianda@gmail.com> (https://github.com/jeremie-codes)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeremie-codes/react-native-sdk-flexpaie/issues"
+    "url": "https://github.com/jeremie-codes/react-native-sdk-flexpaie-sms/issues"
   },
-  "homepage": "https://github.com/jeremie-codes/react-native-sdk-flexpaie#readme",
+  "homepage": "https://github.com/jeremie-codes/react-native-sdk-flexpaie-sms#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -157,5 +157,8 @@
       "release-it"
     ],
     "version": "0.57.2"
+  },
+  "dependencies": {
+    "axios": "^1.13.6"
   }
 }

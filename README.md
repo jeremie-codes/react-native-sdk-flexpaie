@@ -4,14 +4,11 @@ test send sms package
 
 ## Installation
 
-
 ```sh
 npm install react-native-sdk-flexpaie
 ```
 
-
 ## Usage
-
 
 ```js
 import { multiply } from 'react-native-sdk-flexpaie';
@@ -20,7 +17,6 @@ import { multiply } from 'react-native-sdk-flexpaie';
 
 const result = await multiply(3, 7);
 ```
-
 
 ## Contributing
 
