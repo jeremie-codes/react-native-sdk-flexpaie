@@ -34,10 +34,12 @@
   "scripts": {
     "example": "yarn workspace react-native-sdk-flexpaie-example",
     "clean": "del-cli lib",
-    "prepare": "bob build",
-    "typecheck": "tsc",
+    "prepare": "yarn build",
+    "build": "yarn clean && yarn tsc --project tsconfig.json && yarn babel src --extensions \".ts,.tsx\" --out-dir lib/module",
+    "typecheck": "tsc --project tsconfig.json",
     "test": "jest",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
+    "format": "prettier --write .",
     "release": "release-it --only-version"
   },
   "keywords": [
@@ -59,6 +61,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/compat": "^1.3.2",
     "@eslint/eslintrc": "^3.3.1",
@@ -66,6 +73,8 @@
     "@react-native/babel-preset": "0.83.0",
     "@react-native/eslint-config": "0.83.0",
     "@release-it/conventional-changelog": "^10.0.1",
+    "@types/babel__core": "^7",
+    "@types/babel__preset-env": "^7",
     "@types/jest": "^29.5.14",
     "@types/react": "^19.1.12",
     "commitlint": "^19.8.1",
@@ -81,7 +90,7 @@
     "react-native-builder-bob": "^0.40.13",
     "release-it": "^19.0.4",
     "turbo": "^2.5.6",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "react": "*",
