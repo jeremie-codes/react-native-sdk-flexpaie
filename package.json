@@ -37,7 +37,7 @@
     "prepare": "yarn build",
     "build": "yarn clean && yarn tsc --project tsconfig.json && yarn babel src --extensions \".ts,.tsx\" --out-dir lib/module",
     "typecheck": "tsc --project tsconfig.json",
-    "test": "jest",
+    "test": "vitest",
     "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
     "format": "prettier --write .",
     "release": "release-it --only-version"
@@ -168,6 +168,7 @@
     "version": "0.57.2"
   },
   "dependencies": {
-    "axios": "^1.13.6"
+    "axios": "^1.13.6",
+    "vitest": "^4.1.0"
   }
 }
